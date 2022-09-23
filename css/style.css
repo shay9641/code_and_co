@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-top: 24px;
+}
+h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.63;
+  color: #858585;
+}
+/* ---------------------------------- */
+/*Reusable                            */
+/* ---------------------------------- */
+.btn {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #2086fb;
+  border-radius: 22px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.margin-left {
+  margin-left: 40px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.color-black {
+  color: black;
+}
+.top--padding {
+  padding-top: 10px;
+  border-top: 1px solid #dcdcdc;
+}
+.container {
+  text-align: center;
+  max-width: 926px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/*HEADER                              */
+/* ---------------------------------- */
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+header .wrapper {
+  padding: 12px 40px;
+}
+header .logo {
+  float: left;
+}
+header .logo img {
+  width: 76px;
+  height: 44px;
+}
+header nav {
+  text-align: center;
+}
+
+header ul {
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 10px;
+}
+ul::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+}
+header li {
+  float: left;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+header li a {
+  color: white;
+  text-decoration: none;
+}
+header .btn__right {
+  float: right;
+}
+/* ---------------------------------- */
+/*Hero-Section                        */
+/* ---------------------------------- */
+.hero {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://cdn.zeplin.io/59de1f633fed7a7ec333d574/assets/3A4C5B95-2D5E-4CAA-A4C9-C676CF27EE56.png");
+  background-size: cover;
+  min-height: 568px;
+  margin-bottom: 40px;
+}
+.hero .hero-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.hero .searchbox-input {
+  height: 53px;
+  float: left;
+  max-width: 926px;
+  padding: 0 22px;
+  background-color: #fff;
+  width: 95%;
+  border: 0;
+  outline: none;
+}
+.hero .searchbox-wrapper {
+  max-width: 926px;
+  margin-top: 24px;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.hero .searchbox-submit {
+  width: 5%;
+  background-color: #fff;
+  border: 0;
+  height: 53px;
+}
+
+/* ---------------------------------- */
+/*Main-Section                        */
+/* ---------------------------------- */
+main .main-container {
+  position: relative;
+  padding: 52px 0 60px 0;
+  text-align: center;
+}
+main .main-container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -31.238px;
+  right: -31.238px;
+  bottom: -8px;
+  border-right: 2px solid #dcdcdc;
+}
+main .main-container--last {
+  padding: 52px 0 60px 0;
+  text-align: center;
+}
+
+/* ---------------------------------- */
+/*Footer                              */
+/* ---------------------------------- */
+footer {
+  background-color: #323232;
+}
+footer .container {
+  background-color: #323232;
+  padding: 64px 0;
+  margin-top: 34px;
+}
+
+footer .container a {
+  display: inline-block;
+}
+footer .footer-bottom {
+  padding: 25px 0 24px 40px;
+  background-color: #252525;
+}
+footer .footer-bottom p {
+  color: #fff;
+}
