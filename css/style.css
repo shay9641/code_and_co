@@ -40,7 +40,6 @@ h3 {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 50px;
 }
 p {
   font-size: 16px;
@@ -48,6 +47,7 @@ p {
   font-style: normal;
   line-height: 1.63;
   color: #858585;
+  margin-top: 10px;
 }
 /* ---------------------------------- */
 /*Reusable                            */
@@ -72,8 +72,7 @@ p {
 .color-black {
   color: black;
 }
-.top--padding {
-  padding-top: 10px;
+.top--border {
   border-top: 1px solid #dcdcdc;
 }
 .container {
@@ -110,11 +109,6 @@ header ul {
   display: inline-block;
   margin-top: 10px;
 }
-ul::after {
-  content: "";
-  clear: both;
-  display: inline-block;
-}
 header li {
   float: left;
   list-style: none;
@@ -126,7 +120,7 @@ header li a {
   color: white;
   text-decoration: none;
 }
-header .btn__right {
+header .btn-cta {
   float: right;
 }
 /* ---------------------------------- */
@@ -157,7 +151,7 @@ header .btn__right {
   max-width: 926px;
   padding: 0 22px;
   background-color: #fff;
-  width: 95%;
+  width: calc(100% - 45px);
   border: 0;
   outline: none;
 }
@@ -170,7 +164,7 @@ header .btn__right {
 }
 
 .hero .searchbox-submit {
-  width: 5%;
+  width: 45px;
   background-color: #fff;
   border: 0;
   height: 53px;
@@ -179,22 +173,13 @@ header .btn__right {
 /* ---------------------------------- */
 /*Main-Section                        */
 /* ---------------------------------- */
-main .main-container {
-  position: relative;
-  padding: 52px 0 60px 0;
+main .wrapper-border {
+  padding: 60px 48px 60px 48px;
   text-align: center;
+  border-right: solid 1px #dcdcdc;
 }
-main .main-container::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -31.238px;
-  right: -31.238px;
-  bottom: -8px;
-  border-right: 2px solid #dcdcdc;
-}
-main .main-container--last {
-  padding: 52px 0 60px 0;
+main .wrapper {
+  padding: 60px 48px 60px 48px;
   text-align: center;
 }
 
@@ -209,9 +194,14 @@ footer .container {
   padding: 64px 0;
   margin-top: 34px;
 }
-
+footer .container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
 footer .container a {
   display: inline-block;
+  margin-top: 48px;
 }
 footer .footer-bottom {
   padding: 25px 0 24px 40px;
