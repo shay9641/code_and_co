@@ -110,11 +110,7 @@ header ul {
   display: inline-block;
   margin-top: 10px;
 }
-ul::after {
-  content: "";
-  clear: both;
-  display: inline-block;
-}
+
 header li {
   float: left;
   list-style: none;
