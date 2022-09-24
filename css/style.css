@@ -53,6 +53,11 @@ button {
   background: none;
   border: none;
 }
+.hover:hover {
+  text-decoration: underline;
+  color: #fff;
+  text-underline-offset: 5px;
+}
 /* ---------------------------------- */
 /*Reusable                            */
 /* ---------------------------------- */
