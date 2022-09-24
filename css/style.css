@@ -49,6 +49,10 @@ p {
   color: #858585;
   margin-top: 10px;
 }
+button {
+  background: none;
+  border: none;
+}
 /* ---------------------------------- */
 /*Reusable                            */
 /* ---------------------------------- */
@@ -109,10 +113,6 @@ header ul {
   display: inline-block;
   margin-top: 10px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> db2eda91ece1ffa2ce906354d7a957f16ee95557
 header li {
   float: left;
   list-style: none;
@@ -203,10 +203,11 @@ footer .container h2 {
   font-weight: 600;
   color: #fff;
 }
-footer .container a {
-  display: inline-block;
+footer button a {
   margin-top: 48px;
+  display: inline-block;
 }
+
 footer .footer-bottom {
   padding: 25px 0 24px 40px;
   background-color: #252525;
